@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Egoless",
+  "description": "This extension makes Twitter less narcissistic by hiding your follower count",
+  "version": "1.0",
+
+  "permissions": [
+    "https://twitter.com/"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "css": ["egoless.css"]
+    }
+  ],
+
+  "icons": {
+    "48": "white-48-48.png",
+    "128": "white-128-128.png"
+  }
+}
